@@ -17,6 +17,8 @@ class CreateAddressesTable extends Migration
             $table->id();
             $table->foreignId('contact_id')->constrained()->onDelete('cascade');
             $table->string('address');
+            $table->string('country');
+            $table->integer('zip_code')->length(10);
             $table->timestamps();
         });
     }
