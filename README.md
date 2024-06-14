@@ -21,6 +21,10 @@ cd libreta-direcciones-backend
 ```bash
 composer install
 ```
+3. Copia el archivo .env.example a .env y configura tus variables de entorno
+```bash
+cp .env.example .env
+```
 4. Configura tu base de datos en el archivo .env:
 ```bash
 DB_CONNECTION=mysql
@@ -30,11 +34,11 @@ DB_DATABASE=nombre_de_tu_base_de_datos
 DB_USERNAME=tu_usuario
 DB_PASSWORD=tu_contraseña
 ```
-6. Ejecuta las migraciones y seeders para crear y poblar la base de datos:
+5. Ejecuta las migraciones y seeders para crear y poblar la base de datos:
 ```bash
 php artisan migrate --seed
 ```
-7. Inicia el servidor de desarrollo:
+6. Inicia el servidor de desarrollo:
 ```bash
 php artisan serve
 ```
